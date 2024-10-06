@@ -1,0 +1,51 @@
+Two's complement is a way to represent signed integers (both positive and negative) in binary. It's widely used in computer systems because it simplifies arithmetic operations. Here's an easy-to-understand explanation for beginners:
+
+Key Concepts:
+Positive numbers in two's complement are the same as regular binary representation.
+Negative numbers are represented by inverting the bits (changing 0s to 1s and 1s to 0s) and then adding 1 to the result.
+Steps to Find Two's Complement of a Number:
+Write the number in binary.
+Invert the digits (1s become 0s, and 0s become 1s).
+Add 1 to the inverted binary number.
+Example 1: Representing Positive Numbers
+Let's represent 5 in an 8-bit system (8 digits).
+
+First, convert 5 to binary:
+5 in binary is 00000101.
+No change is needed for positive numbers.
+Thus, in two's complement, 5 is simply 00000101.
+
+Example 2: Representing Negative Numbers
+Let's represent -5 in two's complement (8-bit system).
+
+Start with the binary representation of 5:
+
+5 in binary is 00000101.
+Invert all the bits (flip 1s to 0s and 0s to 1s):
+
+11111010.
+Add 1 to the inverted number:
+
+11111010 + 1 = 11111011.
+Thus, in two's complement, -5 is represented as 11111011.
+
+Key Points:
+Two's complement makes it easy to add and subtract numbers without needing separate subtraction rules.
+The most significant bit (MSB) in two's complement determines the sign:
+If the MSB is 0, the number is positive.
+If the MSB is 1, the number is negative.
+Example: Adding 5 and -5 in Two's Complement
+Now, let’s add 5 (00000101) and -5 (11111011):
+
+markdown
+Copy code
+00000101
++ 11111011
+------------
+  00000000  (which is 0, as expected)
+This shows how two's complement simplifies arithmetic, as the addition of 5 and -5 results in 0, just as with normal arithmetic.
+
+Quick Summary:
+Two's complement is used to represent both positive and negative integers.
+Positive numbers are represented normally in binary.
+Negative numbers are represented by inverting the bits and adding 1.
